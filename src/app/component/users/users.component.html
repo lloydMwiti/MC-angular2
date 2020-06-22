@@ -1,0 +1,23 @@
+<div class="container h center wrap">
+<h1 class="w-100">popular repos</h1>
+    <div class="card v left between" *ngFor="let user of users">
+        <div class="card-top h w-100">
+            <img src="{{user.avatar_url}}" alt="" class="user-img">
+            <div class="v left">
+                <p class="name">{{user.login}}</p>
+                <a class="small" href="{{user.html_url}}">{{user.html_url}}</a>
+            </div>
+            
+        </div>
+        <div class="w-100">
+                <span>{{user.public_repos}}</span>
+                <span></span>
+        </div>
+        <div class="w-100 h even bottom">
+            <span class="red">{{user.followers}} followers</span>
+            <span class="btn">following {{user.following}}</span>
+        </div>
+    </div>
+    
+</div>
+

@@ -1,0 +1,22 @@
+<div class="container h center wrap">
+    
+        
+      <div class="card v left between" *ngFor="let repos of repo">
+        <div class="card-top h w-100">
+            <img src="{{profile.avatar_url}}" alt="" class="user-img">
+            <div class="v left">
+                <p class="name">{{repos.name}}</p>
+                <a class="small" href="{{repos.repo_url}}">view repos</a>
+            </div>
+            
+        </div>
+        <div class="w-100">
+                <span>{{repos.description}}</span>
+                <span></span>
+        </div>
+        <div class="w-100 h even bottom">
+          
+        </div>
+    </div>
+
+    </div>

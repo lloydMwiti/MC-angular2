@@ -1,0 +1,62 @@
+<header>
+  <div class="filler  v center">
+        <div class="topcard v " *ngIf="profile" >
+          <div class="">
+            <img src="{{profile.avatar_url}}" class="user_img" alt="">
+          </div>
+          <div class="w-100">
+            <div class="v ">
+              <p>{{profile.login}}</p> 
+              <a href="{profile.html_url}}" class="small">{{profile.html_url}}</a>
+            </div>
+            
+          </div>
+          <div class="w-100 h even bottom">
+            <span class="red">{{profile.public_repos}} repos</span>
+            <span class="red">{{profile.followers}} followers</span>
+            <span class="btn">following {{profile.following}}</span>
+        </div>
+        </div>
+  </div>
+  <nav class="h between">
+    <div class="nav-title">git search</div>
+    <div class="search-holder h center">
+      <div class="search h center">
+        <input type="text" placeholder="search.." [(ngModel)]="username" name="username" (keyup)="findProfile()">
+        
+      </div>
+      
+    </div>
+    <div class="nav-end">
+      <img  class="logo" src=""  alt="">
+      
+      
+    </div>
+  </nav>
+</header>
+<div class="container h center wrap">
+    
+        
+      <div class="card v left between" *ngFor="let repos of repo">
+        <div class="card-top h w-100">
+            <img src="{{profile.avatar_url}}" alt="" class="user-img">
+            <div class="v left">
+                <p class="name">{{repos.name}}</p>
+                <a class="small" href="{{repos.repo_url}}">view repos</a>
+            </div>
+            
+        </div>
+        <div class=" repodesc">
+                <span>{{repos.description}}</span>
+                <span></span>
+        </div>
+        <div class="w-100 h even bottom">
+          
+        </div>
+    </div>
+
+    </div>
+<div class="ww-100">
+  <router-outlet></router-outlet>  
+</div>
+<!-- <app-users [users]="users"></app-users> -->
