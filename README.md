@@ -18,7 +18,7 @@ the objective is an app that allows you to search for users repositories and git
 
 ## live link
 
-https://lloydMwiti.github.io/angular2
+https://lloydMwiti.github.io/MC-angular2
 
 ## Development server
 
