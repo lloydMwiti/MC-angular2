@@ -1,15 +1,17 @@
 import { Injectable } from '@angular/core';
-import {  environment, apiKey } from '../../environments/environment';
 import { HttpClient, HttpClientModule} from '@angular/common/http';
-import { Observable } from 'rxjs'
+import { Observable } from 'rxjs';
+import {  environment } from '../../environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class GithubService {
   private url = "https://api.github.com/users";
-  public key:string = apiKey.serviceKey;
-  public username :String;
+  
+  private key = environment.serviceKey;
+  private username :String;
 
   constructor(private http:HttpClient) {
     this.username='lloydMwiti'
