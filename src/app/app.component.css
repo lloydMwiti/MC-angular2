@@ -124,7 +124,7 @@ h1{
 {   
     margin-left: 5vw;
     width: calc(90vw - 2rem);
-    padding: 4rem 1rem;
+    padding: 0rem 1rem;
     justify-content: space-evenly;
 }
 .bottom{
@@ -150,4 +150,15 @@ h1{
 }
 .repodesc{
     padding: .2rem .5rem;
+}
+.r-link{
+    padding: .3rem 1rem;
+    background-color: rgb(0, 108, 248);
+    color:white;
+    text-decoration:none;
+    margin:.1rem;
+}
+.r-link:hover{
+    background-color: rgb(0, 37, 248);
+
 }

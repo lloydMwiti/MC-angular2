@@ -19,7 +19,7 @@
         </div>
   </div>
   <nav class="h between">
-    <div class="nav-title">git search</div>
+    <div class="nav-title h"><img  class="logo" src=""  alt="">git search</div>
     <div class="search-holder h center">
       <div class="search h center">
         <input type="text" placeholder="search.." [(ngModel)]="username" name="username" (keyup)="findProfile()">
@@ -28,14 +28,22 @@
       
     </div>
     <div class="nav-end">
-      <img  class="logo" src=""  alt="">
+      <a href="#" class="r-link" routerLink="/" >home</a>
+      <a href="#" class="r-link" routerLink="/more" >popular</a>
+      
       
       
     </div>
   </nav>
 </header>
+<div class="ww-100">
+  <router-outlet>
+  </router-outlet>  
+</div>
 <div class="container h center wrap">
-    
+    <div class="w-100">
+      <h1>git repositories</h1>
+    </div>
         
       <div class="card v left between" *ngFor="let repos of repo">
         <div class="card-top h w-100">
@@ -56,7 +64,5 @@
     </div>
 
     </div>
-<div class="ww-100">
-  <router-outlet></router-outlet>  
-</div>
+
 <!-- <app-users [users]="users"></app-users> -->

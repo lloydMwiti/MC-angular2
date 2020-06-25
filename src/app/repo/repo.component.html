@@ -1,7 +1,6 @@
 <div class="container h center wrap">
     
-        
-      <div class="card v left between" *ngFor="let repos of repo">
+    <div class="card v left between" *ngFor="let repos of repo">
         <div class="card-top h w-100">
             <img src="{{profile.avatar_url}}" alt="" class="user-img">
             <div class="v left">
@@ -10,7 +9,7 @@
             </div>
             
         </div>
-        <div class="w-100">
+        <div class=" repodesc">
                 <span>{{repos.description}}</span>
                 <span></span>
         </div>

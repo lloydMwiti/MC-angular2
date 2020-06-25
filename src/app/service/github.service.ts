@@ -34,4 +34,3 @@ export class GithubService {
   }
 
 }
-// daneden?access_token=2e43fd822507b14f02075eca5666087aa44c2f69
